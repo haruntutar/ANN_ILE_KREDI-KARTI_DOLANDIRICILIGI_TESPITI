@@ -39,3 +39,7 @@ Sonuçlar
 | Recall (Fraud)    | 0.857  |
 | Precision (Fraud) | 0.442  |
 | F1-Score          | 0.583  |
+
+pip install -r requirements.txt
+python src/train.py
+

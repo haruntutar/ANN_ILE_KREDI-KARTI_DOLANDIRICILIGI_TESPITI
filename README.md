@@ -58,6 +58,8 @@ Bu model:
 
 ---
 **Veri seti büyük olduğundan GitHub’a eklenmemiştir. Credit Card Fraud Dataset kullanılmaktadır**
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
 ## ▶ Projeyi Çalıştırma
 
 ```bash

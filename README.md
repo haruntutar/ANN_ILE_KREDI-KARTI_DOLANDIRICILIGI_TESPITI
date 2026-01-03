@@ -1,2 +1,41 @@
 # ANN_ILE_KREDI-KARTI_DOLANDIRICILIGI_TESPITI
-Dengesiz kredi kartı işlem verileri üzerinde ANN kullanılarak dolandırıcılık tespiti yapılmıştır. SMOTE ile veri dengelenmiş, Dropout ve EarlyStopping ile aşırı öğrenme kontrol altına alınmıştır. Model, dolandırıcılık işlemlerinin %87’sini doğru yakalayabilmekte ve ROC-AUC skoru 0.969’dur.
+Problem Tanımı:
+- Finans sektöründe dolandırıcılık işlemleri banka ve müşteriler için ciddi maddi kayıplara yol açmaktadır.
+- Bu projede amaç, kredi kartı işlemleri üzerinden dolandırıcılık olup olmadığını tahmin eden yapay sinir ağı (ANN) modeli geliştirmektir.
+
+Bu model:
+- Banka zararını azaltır
+- Müşteri mağduriyetini düşürür
+- Gerçek zamanlı dolandırıcılık sistemlerine entegre edilebilir
+- Model, 100 dolandırıcılık işleminin 92 tanesini doğru şekilde yakalayabilmektedir.
+
+Veri Seti:
+- Anonimleştirilmiş kredi kartı işlem verileri
+- Şiddetli dengesiz sınıf yapısı (%0.17 fraud)
+- Sayısal özelliklerden oluşmaktadır
+
+Ön İşleme:
+- Eksik verilerin temizlenmesi
+- StandardScaler ile ölçekleme
+- SMOTE ile veri dengelenmesi
+
+Model Yapısı (ANN):
+- Giriş katmanı
+- Gizli katmanlar (ReLU)
+- Dropout katmanları
+- Çıkış katmanı (Softmax)
+
+Değerlendirme Metrikleri:
+- ROC-AUC
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+Sonuçlar
+| Metrik            |  Değer |
+| ----------------- | ------ |
+| ROC-AUC           | 0.962  |
+| Recall (Fraud)    | 0.857  |
+| Precision (Fraud) | 0.442  |
+| F1-Score          | 0.583  |

@@ -207,24 +207,3 @@ plt.show()
 # 17. Confusion matrix & classification report
 print(confusion_matrix(y_true, y_pred))
 print(classification_report(y_true, y_pred, digits=4))
-
-
-# 18. Save model
-model.save("fraud_ann_model.h5")
-print("Model saved to fraud_ann_model.h5")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

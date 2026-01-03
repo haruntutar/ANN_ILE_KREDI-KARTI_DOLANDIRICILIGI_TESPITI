@@ -57,7 +57,7 @@ Bu model:
 | F1-Score          | 0.583 |
 
 ---
-
+**Veri seti büyük olduğundan GitHub’a eklenmemiştir. Credit Card Fraud Dataset kullanılmaktadır**
 ## ▶ Projeyi Çalıştırma
 
 ```bash
